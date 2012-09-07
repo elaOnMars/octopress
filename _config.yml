@@ -6,7 +6,8 @@ url: http://yoursite.com
 title: My Octopress Blog
 subtitle: A blogging framework for hackers.
 author: Your Name
-simple_search: http://google.com/search
+# Replace google search with https://www.ixquick.com/
+simple_search: https://www.ixquick.com/
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")

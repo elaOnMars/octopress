@@ -1,3 +1,6 @@
+# encoding: utf-8
+gsub(/ä/i, 'ae')
+
 # Require any additional compass plugins here.
 project_type = :stand_alone
 

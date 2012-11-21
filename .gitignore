@@ -10,5 +10,10 @@ sass.old
 source.old
 source/_stash
 source/stylesheets/screen.css
+source/kontakt
+source/uebermich
+source/texte
+source/home
+source/impressum
 vendor
 node_modules

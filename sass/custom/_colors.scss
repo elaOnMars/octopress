@@ -2,17 +2,58 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-//$header-bg: #263347;
-//$subtitle-color: lighten($header-bg, 58);
-//$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
-//$nav-bg-front: image-url('noise.png');
-//$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
-//$sidebar-bg: desaturate(#eceff5, 8);
-//$sidebar-link-color: saturate(#526f9a, 10);
-//$sidebar-link-color-hover: darken(#7ab662, 9);
-//$footer-bg: #ccc !default;
-//$footer-bg-front: image-url('noise.png');
-//$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
+// PAGE
+// ====
+// Page background color
+$page-bg: 'eee8d5' !default;
+
+
+
+// HEADER
+// ======
+//Header background color
+$header-bg: #1f22cc;
+// Subtitle color: lighter then the header color (in percentage, eg. 58)
+$subtitle-color: lighten($header-bg, 20);
+
+
+// NAVIGATION BAR
+// ==============
+// Navigation bar background color and its text color (grayscaling)
+$nav-bg: desaturate(lighten(#8fc17a, 8), 5);
+// ??
+$nav-bg-front: image-url('noise.png');
+// ??
+$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
+
+
+// BODY
+// ====
+// Main part of your site
+$main-bg: #eee8d5 !default;  // cream
+
+
+// SIDEBAR
+// =======
+// Sidebar background color
+ //$sidebar-bg: desaturate(#1f22cc, 8);  // default
+ $sidebar-bg: darken(#eee8d5, 8) !default;
+// Sidebar link color when in the neighborhood with your cursor
+$sidebar-link-color: saturate(#1f22cc, 10);
+// Sidebar hover link color
+$sidebar-link-color-hover: darken(#1f22cc, 1);
+
+
+// FOOTER
+// ======
+// Footer background color
+$footer-bg: #8fc17a !default;
+// ??
+$footer-bg-front: image-url('noise.png');
+// 
+$footer-bg-back: linear-gradient(lighten($footer-bg, 8), 
+
+$footer-bg, darken($footer-bg, 5));
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */

@@ -18,6 +18,8 @@ $header-font-size: 1em !default;
 $header-padding-top: 1.5em !default;
 $header-padding-bottom: 1.5em !default;
 
+$nav-padding-top: 3em !default;
+
 .group { @include pie-clearfix; }
 
 @mixin collapse-sidebar {
@@ -29,7 +31,7 @@ $header-padding-bottom: 1.5em !default;
   background-color: lighten($sidebar-bg, 2);
   border-top: 1px solid lighten($sidebar-border, 4);
   section {
-    &.odd, &.even { float: left; width: 48%; }
+    &.odd, &.even { float: left; width: 8%; }
     &.odd { margin-left: 0; }
     &.even { margin-left: 4%; }
   }

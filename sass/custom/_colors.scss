@@ -2,58 +2,50 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-// PAGE
-// ====
-// Page background color
-$page-bg: 'eee8d5' !default;
+
+// MAIN COLOR OF THE SITE
+// ======================
+// Thanks to zacharymaril.com/blog/2012/02/24/please-please-octopress/
+$main-color: #8fc17a;
 
 
+//This controls the background.
+$page-bg: lighten($main-color,20);
 
-// HEADER
-// ======
-//Header background color
-$header-bg: #1f22cc;
-// Subtitle color: lighter then the header color (in percentage, eg. 58)
-$subtitle-color: lighten($header-bg, 20);
+//This controls the header.
+$header-bg: darken($main-color,17);
+$title-color: lighten($header-bg,100);
+$subtitle-color: lighten($title-color,0);
 
+//This controls the navigation bar
+$nav-bg: desaturate(darken($main-color, 10), 60);
+$nav-bg-back: linear-gradient(darken($nav-bg, 20), $nav-bg, lighten($nav-bg, 5));
+$nav-link-color: darken($main-color, 20);
+$nav-link-color-hover: lighten($main-color, 20);
+$nav-link-color-visited: darken($main-color, 20);
 
-// NAVIGATION BAR
-// ==============
-// Navigation bar background color and its text color (grayscaling)
-$nav-bg: desaturate(lighten(#8fc17a, 8), 5);
-// ??
-$nav-bg-front: image-url('noise.png');
-// ??
-$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
+//This controls the sidebar
+$sidebar-bg: desaturate(lighten($main-color, 70), 8);
+$sidebar-color: darken($main-color, 80);
+$sidebar-link-color: saturate($main-color, 100);
+$sidebar-link-color-hover: darken($main-color, 100);
 
-
-// BODY
-// ====
-// Main part of your site
-$main-bg: #eee8d5 !default;  // cream
-
-
-// SIDEBAR
-// =======
-// Sidebar background color
- //$sidebar-bg: desaturate(#1f22cc, 8);  // default
- $sidebar-bg: darken(#eee8d5, 8) !default;
-// Sidebar link color when in the neighborhood with your cursor
-$sidebar-link-color: saturate(#1f22cc, 10);
-// Sidebar hover link color
-$sidebar-link-color-hover: darken(#1f22cc, 1);
-
+//How links appear overall
+$link-color: darken($main-color, 30);
+$link-color-hover: darken($main-color, 100);
+$link-color-visited: darken($main-color,10);
+$link-color-active: lighten($link-color-hover,10);
 
 // FOOTER
 // ======
 // Footer background color
-$footer-bg: #8fc17a !default;
+$footer-bg: $nav-bg !default;
 // ??
 $footer-bg-front: image-url('noise.png');
-// 
-$footer-bg-back: linear-gradient(lighten($footer-bg, 8), 
-
-$footer-bg, darken($footer-bg, 5));
+$footer-bg-back: linear-gradient(lighten($footer-bg, 20), darken($footer-bg, 5));
+$footer-link-color: darken($main-color, 30);
+$footer-link-color-hover: lighten($main-color, 20);
+$footer-link-color-visited: darken($main-color, 20);
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */

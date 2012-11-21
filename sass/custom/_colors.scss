@@ -6,7 +6,8 @@
 // MAIN COLOR OF THE SITE
 // ======================
 // Thanks to zacharymaril.com/blog/2012/02/24/please-please-octopress/
-$main-color: #8fc17a;
+//$main-color: #8fc17a;
+$main-color: mediumaquamarine;
 
 
 //This controls the background.
@@ -25,10 +26,10 @@ $nav-link-color-hover: lighten($main-color, 20);
 $nav-link-color-visited: darken($main-color, 20);
 
 //This controls the sidebar
-$sidebar-bg: desaturate(lighten($main-color, 70), 8);
-$sidebar-color: darken($main-color, 80);
-$sidebar-link-color: saturate($main-color, 100);
-$sidebar-link-color-hover: darken($main-color, 100);
+$sidebar-bg: desaturate(lighten($main-color, 20), 8);
+$sidebar-color: darken($main-color, 100);
+$sidebar-link-color: saturate($main-color, 10);
+$sidebar-link-color-hover: darken($main-color, 10);
 
 //How links appear overall
 $link-color: darken($main-color, 30);
